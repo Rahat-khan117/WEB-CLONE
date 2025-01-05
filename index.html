@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz clone</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script
+      src="https://kit.fontawesome.com/95c17d0e8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/95c17d0e8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial,
+          Sans-serif;
+      }
+      .load_more {
+        height: 40px;
+        width: 387px;
+        border: solid #1a9cb8 1.5px;
+        margin: 29px 0 0px 450px;
+      }
+      .load {
+        color: #1a9cb8;
+        padding: 12px 0 0 145px;
+      }
+      .more {
+        text-decoration: none;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <!--header_part-->
+    <header>
+      <div id="link_bar">
+        <a class="link_name1" href="#">Become a Seller</a>
+        <a class="link_name1" href="#">Daraz Donates</a>
+        <a class="link_name1" href="#">Help & Support</a>
+        <a href="#">
+          <div id="app_link">
+            <img class="daraz_logo1" src="/photo/daraz_logo.png" />
+            <a class="link_name" href="#">Save More On App</a>
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav_bar">
+        <a href="#"><img class="daraz1" src="/photo/daraz1.png" /></a>
+        <input
+          class="search_bar"
+          type="search"
+          placeholder="     Search in Daraz"
+        />
+        <div class="icon_container">
+          <div class="icon_container1">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+          </div>
+        </div>
+
+        <div class="nav_container">
+          <div class="log_in">
+            <i class="fa-regular fa-user nav_icon"></i>
+            <a class="nav_name" href="#">Login</a>
+          </div>
+          <div id="mark">|</div>
+          <div class="log_in">
+            <a href="#"> <div class="nav_name">Sign Up</div></a>
+          </div>
+          <div class="globe">
+            <i class="fa-solid fa-globe globe_icon"></i>
+            <div id="language">EN</div>
+            <i class="fa-solid fa-chevron-down down"></i>
+          </div>
+        </div>
+        <div class="shopping_cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!--main_part-->
+    <main>
+      <!--banner-->
+      <div id="banner_container">
+        <div id="category_container">
+          <div id="category_name_container">
+            <div class="cotegory_name">
+              <i class="fa-solid fa-person-dress cotegory_icon"></i>
+              <a href="#" class="name">Women's & Girls' Fashion</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-notes-medical cotegory_icon"></i>
+              <a href="#" class="name">Health & Beauty</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-bag-shopping cotegory_icon"></i>
+              <a href="#" class="name">Watches, Bags, Jewellery</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-shirt cotegory_icon"></i>
+              <a href="#" class="name">Men's & Boys' Fashion</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-baby cotegory_icon"></i>
+              <a href="#" class="name">Mother & Baby</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-camera-retro cotegory_icon"></i>
+              <a href="#" class="name">Electronics Device</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-tv cotegory_icon"></i>
+              <a href="#" class="name">TV & Home Appliances</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-plug cotegory_icon"></i>
+              <a href="#" class="name">Electronic Accessories</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-cat cotegory_icon"></i>
+              <a href="#" class="name">Groceries & Pets</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-house cotegory_icon"></i>
+              <a href="#" class="name">Home & Lifestyle</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-gamepad cotegory_icon"></i>
+              <a href="#" class="name">Sports & Outdoors</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+            <div class="cotegory_name">
+              <i class="fa-solid fa-car cotegory_icon"></i>
+              <a href="#" class="name">Automotive & Motorbike</a>
+              <i class="fa-solid fa-chevron-right right_icon"></i>
+            </div>
+          </div>
+        </div>
+        <div id="banner">
+          <img class="banner_image" src="/photo/banner.png" />
+        </div>
+      </div>
+      <!--banner_bottom-->
+      <div id="banner_bottom">
+        <div class="banner_bottom_box">
+          <a href="#">
+            <img class="banner_bottom_img" src="/photo/banner_bottom1.png" />
+            <p class="banner_bottom_name">Safe Payments</p>
+          </a>
+        </div>
+        <div class="banner_bottom_gap">|</div>
+
+        <div class="banner_bottom_box">
+          <a href="#">
+            <img class="banner_bottom_img" src="/photo/banner_bottom2.png" />
+            <p class="banner_bottom_name">Nationwide Delivery</p>
+          </a>
+        </div>
+        <div class="banner_bottom_gap">|</div>
+
+        <div class="banner_bottom_box">
+          <a href="#">
+            <img class="banner_bottom_img" src="/photo/banner_bottom3.png" />
+            <p class="banner_bottom_name">Free & Easy Return</p>
+          </a>
+        </div>
+        <div class="banner_bottom_gap">|</div>
+
+        <div class="banner_bottom_box">
+          <a href="#">
+            <img class="banner_bottom_img" src="/photo/banner_bottom4.png" />
+            <p class="banner_bottom_name">Best Price Guaranteed</p>
+          </a>
+        </div>
+        <div class="banner_bottom_gap">|</div>
+
+        <div class="banner_bottom_box">
+          <a href="#">
+            <img class="banner_bottom_img" src="/photo/banner_bottom5.png" />
+            <p class="banner_bottom_name">100% Authentice Product</p>
+          </a>
+        </div>
+        <div class="banner_bottom_gap">|</div>
+
+        <div class="banner_bottom_box">
+          <a href="#">
+            <img class="banner_bottom_img" src="/photo/banner_bottom6.png" />
+            <p class="banner_bottom_name">Daraz Varified</p>
+          </a>
+        </div>
+      </div>
+
+      <p class="category_heading_product">Just For You</p>
+      <div id="category_container_product">
+        <div class="product_container">
+          <a href="#">
+            <div class="product_container_main">
+              <img class="product_image" src="/photo/category/1.webp" />
+              <div class="product_name">
+                Vintage T9 Hair Cutting Machine Hair Trimmer Recharge
+                Professional Cordless Hair Trimmer
+              </div>
+              <div class="product_price">
+                <p class="price">৳ 397</p>
+                <p class="discount">-70%</p>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                (230)
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product_container_main">
+              <img class="product_image" src="/photo/category/2.webp" />
+              <div class="product_name">
+                Desk Mobile Phone Holder Stand For iPhone iPad Android
+                Adjustable Desktop Tablet Holder Universal Table Cell Phone
+                Stand
+              </div>
+              <div class="product_price">
+                <p class="price">৳ 38</p>
+                <p class="discount">-30%</p>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                (230)
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product_container_main">
+              <img class="product_image" src="/photo/category/3.webp" />
+              <div class="product_name">
+                Apple Airpods Pro / tws wireless earbuds Bluetooth bluetooth
+                headphone With High Base and long Battery
+              </div>
+              <div class="product_price">
+                <p class="price">৳ 369</p>
+                <p class="discount">-74%</p>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                (230)
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.daraz.com.bd/products/samsung-galaxy-geekthink-active2-40-44mm-amazift-bip-2-gtr-i396764132-s1969210413.html?pvid=d45522c5-265d-42b1-9da0-7b03c112acbe&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1969210413%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Ad45522c5-265d-42b1-9da0-7b03c112acbe%3BunionTrace%3A210160e517269914861824364e1b44%3BoriginPrice%3A83300%3BvoucherPrice%3A83300%3BdisplayPrice%3A83300%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000022812038%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1726991486281&spm=a2a0e.tm80335401.just4u.d_396764132"
+          >
+            <div class="product_container_main">
+              <img
+                class="product_image"
+                src="/photo/category/4fbf6b14cac209a87b22156d4ac58d88.png_400x400q80.png_.webp"
+              />
+              <div class="product_name">
+                Always Smile Jersey T-Shirt For Man| Half Sleeve T Shirt For Men
+              </div>
+              <div class="product_price">
+                <p class="price">৳ 99</p>
+                <p class="discount">-74%</p>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                (44)
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product_container_main">
+              <img class="product_image" src="/photo/category/4.webp" />
+              <div class="product_name">
+                22mm 20mm Band for Samsung Galaxy Watch 3 4 5 45mm Gear S3 46mm
+                42mm Active2 40 44mm Stainless Steel Strap for Amazift BIP 2 GTR
+              </div>
+              <div class="product_price">
+                <p class="price">৳ 833</p>
+                <p class="discount">40%</p>
+              </div>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                (270)
+              </div>
+            </div>
+          </a>
+          
+          <a href="https://www.daraz.com.bd/products/xiaomi-redmi-poco-c55-c65-c40-tpu-i399798359-s1976428053.html?pvid=d2f86733-8cbd-4827-a922-8f649ba21835&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1976428053%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Ad2f86733-8cbd-4827-a922-8f649ba21835%3BunionTrace%3A2141112517270866578878966ef5ad%3BoriginPrice%3A19800%3BvoucherPrice%3A19800%3BdisplayPrice%3A19800%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023143039%3BsingleToolCode%3AchoiceSinglePromotion%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1727086658021&spm=a2a0e.tm80335401.just4u.d_399798359">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/5.webp" />
+            <div class="product_name">
+              C55 Thickened Airbag Shockproof Clear Soft Tpu Phone Case For
+              Xiaomi Redmi Poco C65 4g 5g Transparent Back Cover C40 funda cases
+            </div>
+            <div class="product_price">
+              <p class="price">৳ 830</p>
+              <p class="discount">40%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (470)
+            </div>
+          </div>
+          </a>
+        </div>
+       
+        <a href="https://www.daraz.com.bd/products/6-i324373421-s1552573145.html?pvid=8e8c4f5e-0fa9-4a55-9618-04f60dc13f37&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1552573145%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A8e8c4f5e-0fa9-4a55-9618-04f60dc13f37%3BunionTrace%3A2151e20a17284695653728037e7db7%3BoriginPrice%3A13600%3BvoucherPrice%3A13600%3BdisplayPrice%3A13600%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728469565549&spm=a2a0e.tm80335411.just4u.d_324373421">
+        <div class="product_container">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/6.webp" />
+            <div class="product_name">Cutter With 6 Blades Body # mettle</div>
+            <div class="product_price">
+              <p class="price">৳ 137</p>
+              <p class="discount">47%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (56)
+            </div>
+            
+          </div>
+        </a>
+
+        <a href="https://www.daraz.com.bd/products/huawei-mate-40-50-xiaomi-samsung-oneplus-poco-olaf-10a-i396985877-s1969617415.html?pvid=fb2ca380-8b41-4dea-8f86-e925e03dd8a1&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1969617415%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Afb2ca380-8b41-4dea-8f86-e925e03dd8a1%3BunionTrace%3A21015e6517284699588054502e2a07%3BoriginPrice%3A11300%3BvoucherPrice%3A11300%3BdisplayPrice%3A11300%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023256061%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728469958948&spm=a2a0e.tm80335411.just4u.d_396985877">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/7.webp" />
+            <div class="product_name">10A Type C Fast Charging Cable for Huawei Mate 40 50 Mobile Phone 120W USB-C Phone Data Cord for Xiaomi Samsung Oneplus POCO</div>
+            <div class="product_price">
+              <p class="price">৳ 113</p>
+              <p class="discount">37%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (46)
+            </div>
+          </div>
+          </a>
+        
+
+          <a href="https://www.daraz.com.bd/products/beechip-i401188021-s1980460320.html?pvid=f2d76f5f-dd58-4c99-92c7-5fbcec8f3790&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1980460320%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Af2d76f5f-dd58-4c99-92c7-5fbcec8f3790%3BunionTrace%3A21015e6517284701390394072e2a07%3BoriginPrice%3A35000%3BvoucherPrice%3A35000%3BdisplayPrice%3A35000%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023256061%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728470139140&spm=a2a0e.tm80335411.just4u.d_401188021">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/8.webp" />
+            <div class="product_name">Nose Hair Trimmer USB Rechargeable Trimmer For Nose AndEar Hair Metal Shaver Electric Shaver Trim Nose Hair For Women And Men</div>
+            <div class="product_price">
+              <p class="price">৳ 350</p>
+              <p class="discount">60%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (96)
+            </div>
+          </div>
+          </a>
+         
+          <a href="https://www.daraz.com.bd/products/-i266863013-s1594080671.html?pvid=7511e9ce-9307-4d6e-a7a3-be570f9f8897&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1594080671%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A7511e9ce-9307-4d6e-a7a3-be570f9f8897%3BunionTrace%3A21015e6517284703454974162e2a07%3BoriginPrice%3A39900%3BvoucherPrice%3A39900%3BdisplayPrice%3A39900%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728470345640&spm=a2a0e.tm80335411.just4u.d_266863013">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/9.webp" />
+            <div class="product_name">High quality Leather Long Lusting wallet For Men</div>
+            <div class="product_price">
+              <p class="price">৳ 399</p>
+              <p class="discount">60%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (106)
+            </div>
+          </div>
+          </a>
+
+          <a href="https://www.daraz.com.bd/products/usb-c-3-1-120w-6a-i319777599-s1471677730.html?pvid=183fa325-6e8c-46e8-a446-cce64501ed1a&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1471677730%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A183fa325-6e8c-46e8-a446-cce64501ed1a%3BunionTrace%3A21015e6517284704790608595e2a07%3BoriginPrice%3A33400%3BvoucherPrice%3A33400%3BdisplayPrice%3A33400%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728470479183&spm=a2a0e.tm80335411.just4u.d_319777599">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/10.webp" />
+            <div class="product_name">Shapla Original Zinc Alloy 3 In 1 120W 6A Super Fast Charging Cable Liquid Silicone Fast Charging Data Cable For Micro USB Type-C Iphone With Indication Light</div>
+            <div class="product_price">
+              <p class="price">৳ 334</p>
+              <p class="discount">44%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (109)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/49-i394950415-s1964379462.html?pvid=25110f22-6cd5-4bc0-90e4-812149cee06c&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1964379462%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A25110f22-6cd5-4bc0-90e4-812149cee06c%3BunionTrace%3A21015e6517284707117911841e2a07%3BoriginPrice%3A61300%3BvoucherPrice%3A61300%3BdisplayPrice%3A61300%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000022812038%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728470711919&spm=a2a0e.tm80335411.just4u.d_394950415">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/11.webp" />
+            <div class="product_name">Stainless Steel Strap For Apple Watch Ultra 2 Band 49mm smart watch Metal Bracelet iwatch 9 8 7 6 3 SE 45mm 41mm 38mm 40mm 44mm</div>
+            <div class="product_price">
+              <p class="price">৳ 613</p>
+              <p class="discount">72%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (229)
+            </div>
+          </div>
+          </a>
+        </div>
+        
+        <div class="product_container">
+          <a href="https://www.daraz.com.bd/products/2nd-i420190248-s2057320149.html?pvid=19170d0c-6a30-4f1d-9cef-3f4fb2b21d25&search=jfy&scm=1007.28811.406918.0&priceCompare=skuId%3A2057320149%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A19170d0c-6a30-4f1d-9cef-3f4fb2b21d25%3BunionTrace%3A21015e6517284711142896644e2a07%3BoriginPrice%3A34800%3BvoucherPrice%3A34800%3BdisplayPrice%3A34800%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728471114357&spm=a2a0e.tm80335411.just4u.d_420190248">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/13.webp" />
+            <div class="product_name">Special AirPods Pro 2nd Generation TWS Edition With High Base & Long Battery Wireless Bluetooth Earbuds</div>
+            <div class="product_price">
+              <p class="price">৳ 348</p>
+              <p class="discount">68%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (279)
+            </div>
+          </div>
+          </a>
+
+          <a href="https://www.daraz.com.bd/products/louiswill-men-tr90-i379125978-s1903081412.html?pvid=70158d11-e8af-473a-b0f4-c11e6559185c&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1903081412%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A70158d11-e8af-473a-b0f4-c11e6559185c%3BunionTrace%3A21015e6517284709370028235e2a07%3BoriginPrice%3A67900%3BvoucherPrice%3A67900%3BdisplayPrice%3A67900%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728470937170&spm=a2a0e.tm80335411.just4u.d_379125978">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/12.webp" />
+            <div class="product_name">LouisWill Men TR90 Non-Prescription Glasses Anti Blue Light Flat Mirror Eyewear Can Be Paired With Myopia Gasses Half Frame Design Outdoor Travel Men Trendy</div>
+            <div class="product_price">
+              <p class="price">৳ 679</p>
+              <p class="discount">40%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (229)
+            </div>
+          </div>
+          </a>
+
+          <a href="https://www.daraz.com.bd/products/vintage-t9-electric-hair-cutting-machine-rechargeable-t9-hair-clipper-i302327240-s1344888680.html?pvid=962e8fff-05c9-43d5-947e-742bdaab1b02&search=jfy&scm=1007.51705.379816.0&priceCompare=skuId%3A1344888680%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A962e8fff-05c9-43d5-947e-742bdaab1b02%3BunionTrace%3A21015e6517284712907966328e2a07%3BoriginPrice%3A41500%3BvoucherPrice%3A41500%3BdisplayPrice%3A41500%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728471290865&spm=a2a0e.tm80335411.just4u.d_302327240">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/14.webp" />
+            <div class="product_name">Vintage T9 Electric Hair Cutting Machine Rechargeable T9 Hair Clipper</div>
+            <div class="product_price">
+              <p class="price">৳ 425</p>
+              <p class="discount">25%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (329)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/-i324448250-s1556076916.html?pvid=d6fb93c7-6cc4-45c0-8ebf-4f7639e34ecc&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1556076916%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Ad6fb93c7-6cc4-45c0-8ebf-4f7639e34ecc%3BunionTrace%3A21015e6517284715422311425e2a07%3BoriginPrice%3A54000%3BvoucherPrice%3A54000%3BdisplayPrice%3A54000%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728471542365&spm=a2a0e.tm80335411.just4u.d_324448250">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/15.webp" />
+            <div class="product_name">NEW MEN'S European and American Fashionable Stailnless Steel Men's Quartz Watch For men</div>
+            <div class="product_price">
+              <p class="price">৳ 540</p>
+              <p class="discount">76%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (469)
+            </div>
+          </div>
+          </a>
+
+          <a href="https://www.daraz.com.bd/products/high-quality-usb-rechargeable-touch-induction-lighter-with-heating-wire-technology-i368381665-s1839344018.html?pvid=32156e43-da2b-44e0-809c-e07cd31f7b63&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1839344018%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A32156e43-da2b-44e0-809c-e07cd31f7b63%3BunionTrace%3A21015e6517284717106927736e2a07%3BoriginPrice%3A13500%3BvoucherPrice%3A13500%3BdisplayPrice%3A13500%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023256376%3BsingleToolCode%3AflashSale%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728471710862&spm=a2a0e.tm80335411.just4u.d_368381665">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/16.webp" />
+            <div class="product_name">High Quality USB Rechargeable Touch Induction Lighter with Heating Wire Technology</div>
+            <div class="product_price">
+              <p class="price">৳ 135</p>
+              <p class="discount">79%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (318)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/-i389082809-s1938974786.html?pvid=b8d9b507-be25-41dd-85a4-7c10c9ec8f1a&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1938974786%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Ab8d9b507-be25-41dd-85a4-7c10c9ec8f1a%3BunionTrace%3A21015e6517284718114894007e2a07%3BoriginPrice%3A19000%3BvoucherPrice%3A19000%3BdisplayPrice%3A19000%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728471811612&spm=a2a0e.tm80335411.just4u.d_389082809">  
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/17.webp" />
+            <div class="product_name">Bamboo Charcoal Peel-Off Black Mask - Blackhead Remover Mask</div>
+            <div class="product_price">
+              <p class="price">৳ 190</p>
+              <p class="discount">27%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (4)
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+
+        <div class="product_container">
+          <a href="https://www.daraz.com.bd/products/xiaomi-iphone-pro-4-tws-i391226842-s1952697023.html?pvid=d38296c7-64b2-4797-bbc5-9dda0088df43&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1952697023%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Ad38296c7-64b2-4797-bbc5-9dda0088df43%3BunionTrace%3A21015e6517284719763372698e2a07%3BoriginPrice%3A36000%3BvoucherPrice%3A36000%3BdisplayPrice%3A36000%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023256061%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728471976526&spm=a2a0e.tm80335411.just4u.d_391226842">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/18.webp" />
+            <div class="product_name">Pro 4 TWS Wireless Headphones Earphone Bluetooth-compatible 5.3 Waterproof Headset with Mic for Xiaomi iPhone Pro4 Earbuds</div>
+            <div class="product_price">
+              <p class="price">৳ 360</p>
+              <p class="discount">60%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (0)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/lenovo-wireless-headsets-he05-sport-earphones-magnetic-hanging-bluetooth-50-call-noise-reduction-8-hours-music-control-i248919547-s1731109450.html?pvid=64c42662-4769-40a3-a5b9-673523456b5d&search=jfy&scm=1007.28811.406918.0&priceCompare=skuId%3A1731109450%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A64c42662-4769-40a3-a5b9-673523456b5d%3BunionTrace%3A21015e6517284720836177185e2a07%3BoriginPrice%3A32500%3BvoucherPrice%3A32500%3BdisplayPrice%3A32500%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023256376%3BsingleToolCode%3AflashSale%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728472083697&spm=a2a0e.tm80335411.just4u.d_248919547">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/19.webp" />
+            <div class="product_name">Lenovo Wireless Headsets He05 Sport Earphones Magnetic Hanging Bluetooth 5.0 Call Noise Reduction 8 Hours Music Control</div>
+            <div class="product_price">
+              <p class="price">৳ 325</p>
+              <p class="discount">73%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (1134)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/alloyseed-usb-5v-1a-type-cmicromini-with-protection-function-li-ion-1-20pcs-i410536200-s2029735263.html?pvid=22843aa9-6547-40be-9f5d-fa7a3d1d6fa5&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A2029735263%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A22843aa9-6547-40be-9f5d-fa7a3d1d6fa5%3BunionTrace%3A21015e6517284722265274760e2a07%3BoriginPrice%3A20000%3BvoucherPrice%3A20000%3BdisplayPrice%3A20000%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000022945021%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728472226674&spm=a2a0e.tm80335411.just4u.d_410536200">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/20.webp" />
+            <div class="product_name">1-20PCS Type-c/Micro/Mini USB 5V 1A 18650 TP4056 Lithium Battery Charger Module Charging Board With Protection Function Li-ion</div>
+            <div class="product_price">
+              <p class="price">৳ 200</p>
+              <p class="discount">68%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (0)
+            </div>
+          </div>
+          </a>
+
+        <a href="https://www.daraz.com.bd/products/mscxdk-i403915875-s2002436119.html?pvid=087a726b-1e31-4308-8041-3f7b2d6a28f7&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A2002436119%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A087a726b-1e31-4308-8041-3f7b2d6a28f7%3BunionTrace%3A21015e6517284723311808650e2a07%3BoriginPrice%3A35800%3BvoucherPrice%3A35800%3BdisplayPrice%3A35800%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000023256061%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728472331298&spm=a2a0e.tm80335411.just4u.d_403915875">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/21.webp" />
+            <div class="product_name">6PCS Set Womens Fashion Quartz Watch Female Clock Elastic Strap Luxury Brand Design Ladies Wrist Watch Relogio Feminino</div>
+            <div class="product_price">
+              <p class="price">৳ 318</p>
+              <p class="discount">60%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (0)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/aarong-earth-neem-face-wash-with-bursting-beads-100-ml-i303293161-s1351219001.html?pvid=91852d4c-aaac-4596-927f-635a8ddba6df&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1351219001%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3A91852d4c-aaac-4596-927f-635a8ddba6df%3BunionTrace%3A21015e6517284724948477380e2a07%3BoriginPrice%3A17900%3BvoucherPrice%3A17900%3BdisplayPrice%3A17900%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728472494959&spm=a2a0e.tm80335411.just4u.d_303293161">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/22.webp" />
+            <div class="product_name">Aarong Earth Neem Face Wash With Bursting Beads 100 ml</div>
+            <div class="product_price">
+              <p class="price">৳ 117</p>
+              <p class="discount">0.6%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (304)
+            </div>
+          </div>
+          </a>
+
+         <a href="https://www.daraz.com.bd/products/-i401538568-s1982555964.html?pvid=a13c2851-c50e-4a8e-b125-0410e7b31d0d&search=jfy&scm=1007.28811.376629.0&priceCompare=skuId%3A1982555964%3Bsource%3Atpp-recommend-plugin-41701%3Bsn%3Aa13c2851-c50e-4a8e-b125-0410e7b31d0d%3BunionTrace%3A21015e6517284726288975630e2a07%3BoriginPrice%3A27500%3BvoucherPrice%3A27500%3BdisplayPrice%3A27500%3BsourceTag%3A%23auto_collect%231%24auto_collect%24%3BsinglePromotionId%3A50000022812038%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3ButdId%3A-1%3Btimestamp%3A1728472629042&spm=a2a0e.tm80335411.just4u.d_401538568">
+          <div class="product_container_main">
+            <img class="product_image" src="/photo/category/23.webp" />
+            <div class="product_name">1Pc Motorcycle Birthstone Keychains,Drive Safe Keyring,Biker Gifts For Husband Son Family Friend,Gift For Valentine's Day</div>
+            <div class="product_price">
+              <p class="price">৳ 275</p>
+              <p class="discount">71%</p>
+            </div>
+            <div class="ratting">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              (0)
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+
+     <a href="#" class="more">
+      <div class="load_more">
+        <p class="load">LOAD MORE</p>
+      </div>
+      </a>
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+      <div class="footer_first">
+        <div class="info_container">
+          <div class="info_small">
+            <a href="#" class="heading_footer">Customer Care</a>
+            <a href="#" class="topic_footer">Help center</a>
+            <a href="#" class="topic_footer">How to Buy</a>
+            <a href="#" class="topic_footer">Return & Refunds</a>
+            <a href="#" class="topic_footer">Contact Us</a>
+            <a href="#" class="topic_footer">Terms & Condition</a>
+            <a href="#" class="topic_footer">CCMS - Central Conplain Management System </a>
+             
+          </div>
+          <div class="info_small">
+            <a href="#" class="heading_footer">Daraz</a>
+            <a href="#" class="topic_footer">About Daraz</a>
+            <a href="#" class="topic_footer">Digital Payment</a>
+            <a href="#" class="topic_footer">Daraz Card</a>
+            <a href="#" class="topic_footer">Daraz Blog</a>
+            <a href="#" class="topic_footer">Daraz Mart</a>
+            <a href="#" class="topic_footer">Privacy Policy</a>
+            <a href="#" class="topic_footer">Daraz App</a>
+            <a href="#" class="topic_footer">Daraz Exclusive</a>
+            <a href="#" class="topic_footer">Daraz Donates</a>
+            <a href="#" class="topic_footer">Daraz University</a>
+            <a href="#" class="topic_footer">Sell On Daraz</a>
+            <a href="#" class="topic_footer">Code Of Conduct</a>
+            <a href="#" class="topic_footer">Join The Daraz Affliate Program</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
